@@ -66,7 +66,7 @@ parser.add_argument('--experiment_name', type=str, default='', help='name of exp
 parser.add_argument('--d_cond', type=bool, default=True, help='condition discriminator on input frames, default=`True`')
 parser.add_argument('--nc', type=int, default=3, help='number of input image color channels, default=3')
 parser.add_argument('--max_resl', type=int, default=128, help='max. frame resolution --> image size: max_resl x max_resl , default=128')
-parser.add_argument('--nframes_in', type=int, default=6, help='number of input video frames in one sample, default=12')
+parser.add_argument('--nframes_in', type=int, default=6, help='number of input video frames in one sample, default=6')
 parser.add_argument('--nframes_pred', type=int, default=6, help='number of video frames to predict in one sample, default=6')
 # p100
 parser.add_argument('--batch_size_table', type=dict, default={4:32, 8:16, 16:8, 32:4, 64:2, 128:1, 256:1, 512:1, 1024:1}, help='batch size table:{img_resl:batch_size, ...}, change according to available gpu memory')
